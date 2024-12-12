@@ -32,3 +32,6 @@ function generateExcuse() {
 
   document.getElementById("excuse").innerHTML = excuse;
 }
+
+// Asegurarse de que la función esté disponible globalmente
+window.generateExcuse = generateExcuse;
