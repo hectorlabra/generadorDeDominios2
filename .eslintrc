@@ -1,21 +1,30 @@
 {
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "env": {
     "browser": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-env"]
+    }
   },
   "rules": {
-    "strict":0,
+    "strict": 0,
     "no-unused-vars": 0,
     "no-console": 1,
     "semi": ["error", "always"],
-    "allowImportExportEverywhere": false,
-    "comma-dangle": [1, { //when to use the last comma
+    "comma-dangle": [
+      1,
+      {
         "arrays": "never",
         "objects": "never",
         "imports": "never",
         "exports": "never",
-        "functions": "ignore",
-    }],
-  },
-  "extends": ["eslint:recommended"]
+        "functions": "never"
+      }
+    ]
+  }
 }
