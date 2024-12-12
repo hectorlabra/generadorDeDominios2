@@ -1,55 +1,61 @@
-<!-- hide -->
-# Hello World with Vanilla JS
+# Generador de Excusas
 
-> 🇪🇸 [Spanish version of this readme is available](./README.es.md).
-<!-- endhide -->
-Start coding a JS/HTML/CSS website in 30 seconds by opening this template using 4Geeks' [One-Click Coding](https://s.4geeks.com/start?repo=https://github.com/4GeeksAcademy/vanillajs-hello) or locally on your computer.
+Este es un proyecto de generador de excusas que genera una excusa aleatoria cada vez que se refresca la página o se hace clic en el botón "Generar nueva excusa". El proyecto está estilizado con Bootstrap para darle un look moderno y juguetón, con un fondo oscuro y utilizando la tipografía JetBrains Mono.
 
-## Before you begin
+## Tecnologías utilizadas
 
-Install the packages by typing: `npm install`.
+- HTML
+- CSS (Bootstrap)
+- JavaScript
 
+## Cómo ejecutar el proyecto
 
-### How do I run my website to see live changes?  
+1. Clona este repositorio:
 
+   ```sh
+   git clone git@github.com:hectorlabra/generadorDeExcusas2.git
+   ```
 
-Type on the command line `$ npm run start` and type localhost on the browser.
+2. Navega al directorio del proyecto:
 
-### Where do I write my code?  
+   ```sh
+   cd generadorDeExcusas2
+   ```
 
-It depends on the language, but you have `./src/app.js`, `./src/style.css` and `./src/index.html` respectively, you can add new `.html` as you please, just make sure to import it on the `app.js`.
+3. Instala las dependencias:
 
-> Note: remember that the JS workflow starts inside `window.onload`.
+   ```sh
+   npm install
+   ```
 
+4. Ejecuta el proyecto:
+   ```sh
+   npm run start
+   ```
 
-## Troubleshooting
+## Estructura del proyecto
 
-### I don't see my changes...
+GitHub Copilot
+Entiendo, parece que hay algún problema con la sincronización del archivo README.md. Vamos a asegurarnos de que el archivo README.md esté actualizado correctamente y luego haremos un commit y push al repositorio remoto.
 
-Everytime you change any file inside the `./src` folder the website's public URL will automatically refresh the changes (it's a process called hot deploy)
-Remember also to refresh cleaning the cache (`command+shift+r` on Mac, `control+shift+r` on PC & Linux)
+Paso 1: Verificar el contenido del README.md
+Asegúrate de que el archivo README.md contenga la información correcta. Aquí está el contenido actualizado:
 
-### How do I include more images in my project?
+generadorDeExcusas2/ ├── src/ │ ├── app.js │ ├── index.html │ ├── style.css │ └── assets/ │ ├── img/ │ └── ... ├── package.json ├── webpack.config.js └── README.md
 
-Add them inside the `./src/assets/img` folder and import them from any of your JS files. E.g: `import "../assets/img/rigo-baby.jpg";`
+## Funcionalidad
 
-### How do I include more JS files?
+El generador de excusas utiliza cuatro listas de palabras para generar una excusa aleatoria:
 
-Just add the files into the src folder and import the file/variables into your app.js. E.g: `import myVar from "./file2.js"`
+- `who`: ['El perro', 'Mi abuela', 'El cartero', 'Mi pájaro']
+- `action`: ['se comió', 'orinó', 'aplastó', 'rompió']
+- `what`: ['mi tarea', 'mi teléfono', 'el coche']
+- `when`: ['antes de la clase', 'cuando estaba durmiendo', 'mientras estaba haciendo ejercicio', 'durante mi almuerzo', 'mientras estaba rezando']
 
-### How do I publish the website?
+Cada vez que se genera una excusa, se selecciona una palabra aleatoria de cada lista y se concatenan para formar una excusa completa.
 
-This boilerplate is 100% compatible with the free GitHub pages hosting. Publish your website by running:
+## Autor
 
-```bash
-$ npm run deploy
-```
+Hecho por [hectorlabra](https://github.com/hectorlabra)
 
-Very easy and in just one step!  Push to your __main__ branch and use the free hosting that comes with [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages), the project is ready to be published. Remember to choose to run the Github Page from your main branch.
-<!-- hide -->
-### Thank you
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) or [CyberSecurity Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/cybersecurity)
-
-You can find other templates and resources like this at the [school's GitHub page](https://github.com/4geeksacademy/).
-<!-- endhide -->
+[![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/hectorlabra)
