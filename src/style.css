@@ -1,31 +1,85 @@
+/* Variables de colores */
+:root {
+  --bg-color: #1a1a2e;
+  --card-bg: #16213e;
+  --btn-color: #e94560;
+  --btn-hover: #ff2e63;
+  --domain-bg: rgba(13, 202, 240, 0.2);
+  --domain-hover: rgba(13, 202, 240, 0.4);
+}
+
+/* Estilos generales */
 body {
-  background-color: #2c2c2c;
+  background-color: var(--bg-color);
   color: #ffffff;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
 }
 
+/* Estilos de la tarjeta */
 .card {
-  background-color: #3c3c3c;
+  background-color: var(--card-bg);
   border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos del dominio */
+#domain {
+  font-family: "Space Mono", monospace;
+  background-color: var(--domain-bg);
+  transition: all 0.3s ease;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 60%; /* Aumentar significativamente el ancho de la tarjeta */
-  max-width: 800px; /* Limitar el ancho máximo */
-  margin: 0 auto; /* Centrar la tarjeta */
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
 }
 
-.btn-3d {
-  background-color: #007bff;
+#domain:hover {
+  background-color: var(--domain-hover);
+  transform: scale(1.02);
+}
+
+/* Animaciones del dominio */
+.fade-out {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.2s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in;
+}
+
+/* Estilos del botón */
+.btn-danger {
+  background-color: var(--btn-color);
   border: none;
-  border-radius: 5px;
-  box-shadow: 0 4px #0056b3;
-  color: #ffffff;
-  font-weight: bold;
-  padding: 10px 20px;
-  transition: transform 0.2s;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.btn-3d:active {
-  transform: translateY(4px);
-  box-shadow: 0 0 #0056b3;
+.btn-danger:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+}
+
+.btn-danger:active {
+  transform: scale(0.95) translateY(0);
 }
