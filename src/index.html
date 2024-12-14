@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generador de Excusas</title>
+    <title>Generador de nombres de dominio</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -14,15 +14,15 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body onload="generateExcuse()">
+  <body onload="displayRandomDomain()">
     <div class="container text-center mt-5">
-      <h1 class="mb-4">Generador de Excusas</h1>
+      <h1 class="mb-4">Generador de nombres de dominio</h1>
       <div class="card mx-auto">
         <div class="card-body">
-          <h5 class="card-title">Tu excusa:</h5>
-          <p id="excuse" class="card-text">Mi perro se comió mi tarea</p>
-          <button class="btn btn-3d" onclick="generateExcuse()">
-            Generar nueva excusa
+          <h5 class="card-title">Tu nombre de dominio es:</h5>
+          <p id="domain" class="card-text">thegreatjogger.com</p>
+          <button class="btn btn-3d" onclick="displayRandomDomain()">
+            Generar nombre de dominio
           </button>
         </div>
       </div>
