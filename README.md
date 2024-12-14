@@ -1,6 +1,6 @@
-# Generador de Excusas
+# Generador de Nombres de Dominio
 
-Este es un proyecto de generador de excusas que genera una excusa aleatoria cada vez que se refresca la página o se hace clic en el botón "Generar nueva excusa". El proyecto está estilizado con Bootstrap para darle un look moderno y juguetón, con un fondo oscuro y utilizando la tipografía JetBrains Mono.
+Este proyecto genera nombres de dominio combinando pronombres, adjetivos, sustantivos y extensiones de manera aleatoria. La interfaz está estilizada con Bootstrap para darle un look moderno y profesional, utilizando la tipografía JetBrains Mono.
 
 ## Tecnologías utilizadas
 
@@ -13,49 +13,33 @@ Este es un proyecto de generador de excusas que genera una excusa aleatoria cada
 1. Clona este repositorio:
 
    ```sh
-   git clone git@github.com:hectorlabra/generadorDeExcusas2.git
+   git clone git@github.com:hectorlabra/generadorDeDominios2.git
    ```
 
 2. Navega al directorio del proyecto:
 
    ```sh
-   cd generadorDeExcusas2
+   cd generadorDeDominios2
    ```
 
-3. Instala las dependencias:
-
-   ```sh
-   npm install
-   ```
-
-4. Ejecuta el proyecto:
-   ```sh
-   npm run start
-   ```
+3. Abre el archivo `index.html` en tu navegador preferido.
 
 ## Estructura del proyecto
 
-GitHub Copilot
-Entiendo, parece que hay algún problema con la sincronización del archivo README.md. Vamos a asegurarnos de que el archivo README.md esté actualizado correctamente y luego haremos un commit y push al repositorio remoto.
+- `index.html`: El archivo principal que contiene la estructura HTML.
+- `styles/`: Carpeta que contiene los archivos CSS.
+- `scripts/`: Carpeta que contiene los archivos JavaScript.
 
-Paso 1: Verificar el contenido del README.md
-Asegúrate de que el archivo README.md contenga la información correcta. Aquí está el contenido actualizado:
+## Contribuciones
 
-generadorDeExcusas2/ ├── src/ │ ├── app.js │ ├── index.html │ ├── style.css │ └── assets/ │ ├── img/ │ └── ... ├── package.json ├── webpack.config.js └── README.md
+Las contribuciones son bienvenidas. Por favor, sigue los siguientes pasos:
 
-## Funcionalidad
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva funcionalidad'`).
+4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
 
-El generador de excusas utiliza cuatro listas de palabras para generar una excusa aleatoria:
+## Licencia
 
-- `who`: ['El perro', 'Mi abuela', 'El cartero', 'Mi pájaro']
-- `action`: ['se comió', 'orinó', 'aplastó', 'rompió']
-- `what`: ['mi tarea', 'mi teléfono', 'el coche']
-- `when`: ['antes de la clase', 'cuando estaba durmiendo', 'mientras estaba haciendo ejercicio', 'durante mi almuerzo', 'mientras estaba rezando']
-
-Cada vez que se genera una excusa, se selecciona una palabra aleatoria de cada lista y se concatenan para formar una excusa completa.
-
-## Autor
-
-Hecho por [hectorlabra](https://github.com/hectorlabra)
-
-[![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)](https://github.com/hectorlabra)
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
